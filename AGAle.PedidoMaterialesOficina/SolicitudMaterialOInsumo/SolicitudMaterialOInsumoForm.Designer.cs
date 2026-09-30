@@ -1,6 +1,6 @@
 ﻿namespace AGAle.PedidoMaterialesOficina
 {
-    partial class SolicitarMaterialOInsumoForm
+    partial class SolicitudMaterialOInsumoForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            ListViewItem listViewItem1 = new ListViewItem(new string[] { "Resma de hojas", "5", "Alta" }, -1);
-            ListViewItem listViewItem2 = new ListViewItem(new string[] { "Lapicera", "100", "Alta" }, -1);
+            ListViewItem listViewItem3 = new ListViewItem(new string[] { "Resma de hojas", "5", "Alta" }, -1);
+            ListViewItem listViewItem4 = new ListViewItem(new string[] { "Lapicera", "100", "Alta" }, -1);
             comboBox1 = new ComboBox();
             label1 = new Label();
             label2 = new Label();
@@ -46,14 +46,15 @@
             columnHeader2 = new ColumnHeader();
             button3 = new Button();
             button4 = new Button();
-            columnHeader3 = new ColumnHeader();
             label3 = new Label();
+            label6 = new Label();
+            comboBox2 = new ComboBox();
             SuspendLayout();
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(127, 59);
+            comboBox1.Location = new Point(127, 73);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(225, 28);
             comboBox1.TabIndex = 0;
@@ -62,7 +63,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(9, 62);
+            label1.Location = new Point(9, 76);
             label1.Name = "label1";
             label1.Size = new Size(112, 20);
             label1.TabIndex = 1;
@@ -71,7 +72,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 285);
+            label2.Location = new Point(12, 291);
             label2.Name = "label2";
             label2.Size = new Size(236, 20);
             label2.TabIndex = 3;
@@ -81,7 +82,7 @@
             // richTextBox1
             // 
             richTextBox1.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            richTextBox1.Location = new Point(12, 315);
+            richTextBox1.Location = new Point(12, 321);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(776, 93);
             richTextBox1.TabIndex = 4;
@@ -94,12 +95,12 @@
             label4.AutoSize = true;
             label4.BorderStyle = BorderStyle.FixedSingle;
             label4.Font = new Font("Segoe UI", 7.8F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(643, 18);
+            label4.ForeColor = Color.Goldenrod;
+            label4.Location = new Point(403, 4);
             label4.Name = "label4";
-            label4.Size = new Size(145, 70);
+            label4.Size = new Size(386, 19);
             label4.TabIndex = 7;
-            label4.Text = "Prioridades\r\nAlta: menos de 24 horas\r\nMedia: 24-48 horas\r\nBaja: más de 48 horas";
+            label4.Text = "Alta: menos de 24 horas Media: 24-48 horas Baja: más de 48 horas";
             // 
             // button1
             // 
@@ -122,7 +123,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(9, 20);
+            label5.Location = new Point(9, 34);
             label5.Name = "label5";
             label5.Size = new Size(59, 20);
             label5.TabIndex = 11;
@@ -130,7 +131,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(127, 20);
+            textBox1.Location = new Point(127, 34);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "aale.externo";
             textBox1.Size = new Size(225, 27);
@@ -138,12 +139,12 @@
             // 
             // listView1
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
-            listViewItem2.Tag = "";
-            listView1.Items.AddRange(new ListViewItem[] { listViewItem1, listViewItem2 });
-            listView1.Location = new Point(9, 141);
+            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
+            listViewItem4.Tag = "";
+            listView1.Items.AddRange(new ListViewItem[] { listViewItem3, listViewItem4 });
+            listView1.Location = new Point(12, 135);
             listView1.Name = "listView1";
-            listView1.Size = new Size(575, 132);
+            listView1.Size = new Size(555, 139);
             listView1.TabIndex = 13;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
@@ -152,7 +153,7 @@
             // columnHeader1
             // 
             columnHeader1.Text = "Item";
-            columnHeader1.Width = 400;
+            columnHeader1.Width = 450;
             // 
             // columnHeader2
             // 
@@ -161,7 +162,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(602, 158);
+            button3.Location = new Point(589, 146);
             button3.Name = "button3";
             button3.Size = new Size(186, 29);
             button3.TabIndex = 14;
@@ -170,17 +171,12 @@
             // 
             // button4
             // 
-            button4.Location = new Point(602, 202);
+            button4.Location = new Point(589, 197);
             button4.Name = "button4";
             button4.Size = new Size(186, 29);
             button4.TabIndex = 15;
             button4.Text = "Quitar";
             button4.UseVisualStyleBackColor = true;
-            // 
-            // columnHeader3
-            // 
-            columnHeader3.Text = "Prioridad";
-            columnHeader3.Width = 90;
             // 
             // label3
             // 
@@ -192,11 +188,31 @@
             label3.TabIndex = 16;
             label3.Text = "*Esta solicitud deberá ser aprobada por el jefe de área correspondiente";
             // 
-            // SolicitarMaterialOInsumoForm
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(476, 34);
+            label6.Name = "label6";
+            label6.Size = new Size(70, 20);
+            label6.TabIndex = 18;
+            label6.Text = "Prioridad";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(560, 31);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(225, 28);
+            comboBox2.TabIndex = 17;
+            comboBox2.Text = "Alta";
+            // 
+            // SolicitudMaterialOInsumoForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 482);
+            Controls.Add(label6);
+            Controls.Add(comboBox2);
             Controls.Add(label3);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -210,8 +226,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(comboBox1);
-            Name = "SolicitarMaterialOInsumoForm";
-            Text = "Solicitud de Materiales - OfiCentral S.A.";
+            Name = "SolicitudMaterialOInsumoForm";
+            Text = "Solicitud de Materiales";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,7 +249,8 @@
         private ColumnHeader columnHeader2;
         private Button button3;
         private Button button4;
-        private ColumnHeader columnHeader3;
         private Label label3;
+        private Label label6;
+        private ComboBox comboBox2;
     }
 }
