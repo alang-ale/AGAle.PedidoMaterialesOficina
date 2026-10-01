@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace AGAle.PedidoMaterialesOficina.AprobaciónSolicitudesMaterialOInsumo
 {
-    public partial class AprobaciónSolicitudesMaterialOInsumoForm : Form
+    public partial class AprobacionSolicitudesInsumosForm : Form
     {
-        public AprobaciónSolicitudesMaterialOInsumoForm()
+        public AprobacionSolicitudesInsumosForm()
         {
             InitializeComponent();
         }

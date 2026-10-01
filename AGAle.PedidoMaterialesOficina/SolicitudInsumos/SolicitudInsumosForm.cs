@@ -1,8 +1,8 @@
 namespace AGAle.PedidoMaterialesOficina
 {
-    public partial class SolicitudMaterialOInsumoForm : Form
+    public partial class SolicitudInsumosForm : Form
     {
-        public SolicitudMaterialOInsumoForm()
+        public SolicitudInsumosForm()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace AGAle.PedidoMaterialesOficina
 {
-    partial class SolicitudMaterialOInsumoForm
+    partial class SolicitudInsumosForm
     {
         /// <summary>
         ///  Required designer variable.

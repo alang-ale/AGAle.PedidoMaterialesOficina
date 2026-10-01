@@ -1,6 +1,6 @@
 ﻿namespace AGAle.PedidoMaterialesOficina.AprobaciónSolicitudesMaterialOInsumo
 {
-    partial class AprobaciónSolicitudesMaterialOInsumoForm
+    partial class AprobacionSolicitudesInsumosForm
     {
         /// <summary>
         /// Required designer variable.
@@ -106,7 +106,6 @@
             button3.TabIndex = 18;
             button3.Text = "Aprobar";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += this.button3_Click;
             // 
             // listView2
             // 

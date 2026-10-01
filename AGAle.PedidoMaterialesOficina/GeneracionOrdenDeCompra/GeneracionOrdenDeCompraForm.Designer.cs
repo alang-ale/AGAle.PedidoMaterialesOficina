@@ -133,7 +133,6 @@
             textBox2.Size = new Size(225, 27);
             textBox2.TabIndex = 31;
             textBox2.Text = "30-71123456-8";
-            textBox2.TextChanged += this.textBox2_TextChanged;
             // 
             // label3
             // 
@@ -143,7 +142,6 @@
             label3.Size = new Size(40, 20);
             label3.TabIndex = 30;
             label3.Text = "CUIT";
-            label3.Click += this.label3_Click;
             // 
             // SKU
             // 
@@ -214,7 +212,6 @@
             label4.Size = new Size(110, 20);
             label4.TabIndex = 35;
             label4.Text = "Buscar por SKU";
-            label4.Click += this.label4_Click;
             // 
             // button3
             // 
@@ -224,7 +221,6 @@
             button3.TabIndex = 37;
             button3.Text = "Agregar a orden";
             button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
             // 
             // button4
             // 
